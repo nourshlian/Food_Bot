@@ -6,7 +6,7 @@ db = mysql.connector.connect(host="127.0.0.1",user="root",passwd="1234",database
 q = db.cursor(buffered=True)
 
 
-
+ 
 def register(chat_id,name):
     q.execute('INSERT INTO foodOrders (id,name,credit,admin) VALUES (%s,%s,%s,%s)',(chat_id,name,1,0))
     db.commit()

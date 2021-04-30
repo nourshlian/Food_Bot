@@ -6,7 +6,7 @@ import sqlfood
 
 food_list = ["pizza", "falafel", "tost"]
 
-
+ 
 class TelegramBot:
 
     def __init__(self):
